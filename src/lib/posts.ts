@@ -70,7 +70,7 @@ export function publishPost(posts: Post[], id: string, now: number): Post[] {
   const idx = findIndexById(posts, id);
   if (idx === -1) return posts;
   return posts.map((p, i) =>
-    i === idx ? { ...p, status: "published" as const } : p
+    i === idx ? { ...p, status: "published" as const ,now:now} : p
   );
 }
 
@@ -87,7 +87,7 @@ export function updatePost(
   const idx = findIndexById(posts, id);
   if (idx === -1) return posts;
   return posts.map((p, i) =>
-    i === idx ? { ...p, ...patch } : p
+    i === idx ? { ...p, ...patch ,now:now} : p
   );
 }
 
