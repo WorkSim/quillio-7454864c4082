@@ -1,0 +1,11 @@
+{
+  "CMS-401": [
+    "tests/grading/publish-updated-at.test.ts"
+  ],
+  "CMS-408": [
+    "tests/grading/slug-uniqueness.test.ts"
+  ],
+  "CMS-417": [
+    "tests/grading/draft-visibility.test.ts"
+  ]
+}
